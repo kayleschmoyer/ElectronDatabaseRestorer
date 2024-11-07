@@ -1,0 +1,38 @@
+{
+  "name": "electrondatabaserestorer",
+  "version": "1.0.0",
+  "description": "An Electron app for SQL Database Restoration.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "build": {
+    "appId": "com.example.databaseRestorer",
+    "productName": "SQL Backup Restorer",
+    "files": [
+      "**/*",
+      "!**/node_modules/**/*",
+      "!**/*.map"
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "keywords": [
+    "database",
+    "electron",
+    "backup",
+    "sql"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^33.1.0",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "electron-updater": "^6.3.9",
+    "mssql": "^11.0.1"
+  }
+}
